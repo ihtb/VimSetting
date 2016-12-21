@@ -1,4 +1,3 @@
-" 更新日 ; 2016/12/19 11:00
 " 画面左に行数を表示
 set number
 
@@ -15,13 +14,17 @@ set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
 " インデント設定
+" set expandtab
 set tabstop=4
 set shiftwidth=4
-set softtabstop=0
+set autoindent
+
 set cmdheight=2
 set laststatus=2
 set cursorline
-set autoindent
+
+"左右のカーソル移動で行間移動可能にする。
+set whichwrap=b,s,h,l,<,>,[,]
 
 " キーマップ
 " For NerdTree open
@@ -57,7 +60,8 @@ colorscheme molokai
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
-
+		
 " plugin list
 Bundle 'Townk/vim-autoclose'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
