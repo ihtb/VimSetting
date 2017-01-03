@@ -8,9 +8,13 @@ set number
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+" undoファイルを生成しない
+set noundofile
+
 " エンコード設定
 set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+" set encoding=sjis
+set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileformats=unix,dos,mac
 
 " インデント設定
@@ -62,6 +66,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 		
 " plugin list
-Bundle 'Townk/vim-autoclose'
+" Bundle 'Townk/vim-autoclose'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
