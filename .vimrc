@@ -29,6 +29,8 @@ set cursorline
 
 "左右のカーソル移動で行間移動可能にする。
 set whichwrap=b,s,h,l,<,>,[,]
+"バックスペースで改行とタブを消せるようにする。
+set backspace=2
 
 " キーマップ
 " For NerdTree open
@@ -66,6 +68,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 		
 " plugin list
-" Bundle 'Townk/vim-autoclose'
+Bundle 'Townk/vim-autoclose'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
