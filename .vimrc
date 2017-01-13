@@ -13,7 +13,6 @@ set noundofile
 
 " エンコード設定
 set encoding=utf-8
-" set encoding=sjis
 set fileencodings=utf-8,iso-2022-jp,euc-jp,sjis
 set fileformats=unix,dos,mac
 
@@ -63,11 +62,17 @@ syntax on
 colorscheme molokai
 
 " vundle Initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set nocompatible " be iMproved. required
+filetype off    " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 		
 " plugin list
 Bundle 'Townk/vim-autoclose'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+
+call vundle#end()
+filetype plugin indent on
