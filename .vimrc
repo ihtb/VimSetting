@@ -61,7 +61,10 @@ set showcmd
 
 " カラースキーム
 syntax on
-colorscheme molokai
+" colorscheme molokai
+colorscheme koehler
+" set background=black
+" colorscheme hybrid
 
 " vundle Initialize
 set nocompatible " be iMproved. required
