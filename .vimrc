@@ -34,6 +34,8 @@ set backspace=2
 " キーマップ
 " For NerdTree open
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+noremap <C-j> <esc>
+noremap! <C-j> <esc>
 
 " ステータスライン表示設定
 " ファイル名表示
