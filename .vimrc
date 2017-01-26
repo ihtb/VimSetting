@@ -1,3 +1,6 @@
+" Set up for multibyte char
+scriptencoding utf-8
+
 " 画面左に行数を表示
 set number
 
@@ -33,6 +36,7 @@ set backspace=2
 
 " キーマップ
 " For NerdTree open
+" 一部のディレクトリが表示されない問題があるためアンインストール
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 noremap <C-j> <esc>
 noremap! <C-j> <esc>
@@ -59,6 +63,10 @@ set laststatus=2
 " 入力コマンドを表示
 set showcmd
 
+" コマンド補完 入力中にtab
+set wildmenu    " コマンド補完on
+set history=500 " 記憶コマンド数
+
 " カラースキーム
 syntax on
 " colorscheme molokai
@@ -76,6 +84,7 @@ Plugin 'VundleVim/Vundle.vim'
 		
 " plugin list
 Bundle 'Townk/vim-autoclose'
+" 一部のディレクトリが表示されない問題があるためアンインストール
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 
