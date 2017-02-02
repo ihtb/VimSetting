@@ -1,6 +1,10 @@
 " Set up for multibyte char
 scriptencoding utf-8
 
+"左右のカーソル移動で行間移動可能にする。
+set nocompatible
+set whichwrap=b,s,h,l,<,>,[,]
+
 " 画面左に行数を表示
 set number
 
@@ -29,8 +33,6 @@ set cmdheight=2
 set laststatus=2
 set cursorline
 
-"左右のカーソル移動で行間移動可能にする。
-set whichwrap=b,s,h,l,<,>,[,]
 "バックスペースで改行とタブを消せるようにする。
 set backspace=2
 
@@ -75,7 +77,7 @@ colorscheme koehler
 " colorscheme hybrid
 
 " vundle Initialize
-set nocompatible " be iMproved. required
+" set nocompatible " 前で既にこのコマンドを記述している為コメントアウト
 filetype off    " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
