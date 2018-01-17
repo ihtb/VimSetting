@@ -42,6 +42,8 @@ set backspace=2
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 noremap <C-j> <esc>
 noremap! <C-j> <esc>
+nnoremap <C-n> gt
+nnoremap <C-p> gT
 
 " ステータスライン表示設定
 " ファイル名表示
@@ -89,6 +91,8 @@ Bundle 'Townk/vim-autoclose'
 " 一部のディレクトリが表示されない問題があるためアンインストール
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'unite.vim'
+Bundle 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
