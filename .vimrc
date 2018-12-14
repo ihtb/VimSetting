@@ -8,6 +8,12 @@ set whichwrap=b,s,h,l,<,>,[,]
 " 画面左に行数を表示
 set number
 
+" クリップボード設定
+set clipboard=unnamed,autoselect
+
+" 不可視文字を表示
+set list
+set listchars=tab:>>
 " 括弧補完入力
 " noremap { {}<Left>  Townk/vim-autocloseによって代替
 " noremap [ []<Left>  Townk/vim-autocloseによって代替
