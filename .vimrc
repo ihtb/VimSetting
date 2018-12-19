@@ -93,12 +93,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 		
 " plugin list
-Bundle 'Townk/vim-autoclose'
-" 一部のディレクトリが表示されない問題があるためアンインストール
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'unite.vim'
 Bundle 'mattn/emmet-vim'
+Bundle 'kana/vim-smartinput'
 
 call vundle#end()
 filetype plugin indent on
